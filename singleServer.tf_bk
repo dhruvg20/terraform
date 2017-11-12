@@ -1,7 +1,7 @@
 provider "aws" {
   region = "us-east-1"
 }
-
+/* 
 
 variable "server_port" {
     description = "Instance Port to connect to"
@@ -33,14 +33,14 @@ resource "aws_security_group" "instance" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
-  /*egress {
+  egress {
     from_port   = "${var.server_port}"
     to_port     = "${var.server_port}"
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
-  } */
+  }
 }
 
 output "public_ip" {
     value = "${aws_instance.example.public_ip}"
-}
+} */
